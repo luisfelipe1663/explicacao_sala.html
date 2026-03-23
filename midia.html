@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Trabalhando com midia</title>
+</head> 
+
+<body>
+    <h1>Inserindo audio e video</h1>
+    <P>Pra inserir uma musica MP3 em sua página wrb, o arquivo precisa estar em uma pasta junto com a raiz do site. Como
+        é o caso da pasta midia.</P>
+    <audio controls>
+        <source src="midia/metalica_nothing.mp3"type="audio/mpeg">
+
+    </audio>
+    <br>
+    <br>
+    <section>
+       <p>Veja o video a seguir:</p>
+       <video controls>
+       <source src="midia/pink-floyd.mp4" typer="video/mp4">
+       <track kind="subtitles" srclang="pt-bt"src="midia/legenda.ptbr.vtt" label ="Português Brasil" default>
+       <track kind="subtitles" srclang="en"src="midia/legenda.en.vtt" label ="inglês">
+       </video>
+       
+    </section>
+    <section> <p>Existe outra forma de inserir o video, sem ter o arquivo. por meio do site do <b>youtube</b>
+    </p><iframe width="560" height="315" src="https://www.youtube.com/embed/09R8_2nJtjg?si=1Tg7yhzzVE8cnBeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

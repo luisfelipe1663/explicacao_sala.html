@@ -1,0 +1,65 @@
+/*customiszação do pseudo-classe*/
+h1{ color:aqua;
+}
+
+p{
+    color: blue;
+}
+a{
+    background-color: #e70c4a;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    border-color: solid rgb(0, 0, 0) 14px;
+}
+/* Comportamento de link a ser clicado*/
+a:link{ 
+    color: #6cff00;
+}
+/* comportamento de link depois de ser clicado*/
+a:visited{
+    color:#000;
+    background-color: yellow;
+}/*comportamento de passar o mouse sobre */
+a:hover{
+    background-color: aqua;
+    color:red;
+}
+/*comportamento de ativação*/
+a:active{
+    background-color: #fc0e0e;
+    color: black;
+}
+button:link{
+    color: #6cff00;
+}
+button:visited{
+    color: #000;
+    background-color: yellow;}
+    button:hover{
+        background-color: aqua;
+        color: #fc0e0e;
+    }
+    /*Trabalhando com Pseudo-elemento*/
+    p::first-line{
+        color:red;
+        font-variant: small-caps;
+    }
+    p::first-letter{
+        color:rgb(195, 0, 255);
+        font-size: xx-large;
+    }
+    /*antes do elemento*/
+    h3::before{
+        content: url(/img/download.png);
+    }
+     /*depois do elemento*/
+     h3::after{
+        content: url(/img/download.png);
+    } /*especifico para listas(bulets ou marcadores)*/
+    ::marker{
+        color:#6cff00;
+    }/**/
+    ::selection{color:chocolate;
+    background-color: #000;}
